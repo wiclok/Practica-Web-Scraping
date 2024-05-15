@@ -1,7 +1,11 @@
 import requests
 
-url = 'https://books.toscrape.com/'
+def Web_Crawling(url):
+  response = requests.get(url)
 
-response = requests.get(url)
+def Execute_Program():
+  url = 'https://books.toscrape.com/'
+  Web_Crawling(url)
 
-print(response.text)
+if __name__ == '__main__':
+  Execute_Program()
