@@ -1,4 +1,5 @@
 import requests
+from bs4 import BeautifulSoup
 
 def Web_Crawling(url):
   response = requests.get(url)
